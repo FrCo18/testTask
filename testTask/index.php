@@ -10,7 +10,7 @@
 </head>
 <body>
     <?php
-  echo Settings::config("db1.user")."\n";
+  echo Settings::config("db.user")."\n";
     ?>
 </body>
 </html>
