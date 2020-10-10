@@ -11,7 +11,7 @@ class Settings
                         return $value;
                     }
                     else{
-                        return Settings::findElement($arrayAssoc[$key], $elementArray, $i);
+                        return Settings::findElement($arrayAssoc[$key], $elementArray, $i, $exeptionName);
                     }
                 }
             }
