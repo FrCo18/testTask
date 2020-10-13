@@ -2,7 +2,6 @@
 class Settings
 {
     public static function findElement($arrayAssoc, $elementArray, $i, $exeptionName){
-        $j==$i;
         if($i<count($elementArray)){
             foreach($arrayAssoc as $key=>$value){
                 if($elementArray[$i]==$key){
