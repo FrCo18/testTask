@@ -1,7 +1,5 @@
 <?php
-class Settings
-{
-    public static function findElement($arrayAssoc, $elementArray, $i, $exeptionName){
+    public function findElement($arrayAssoc, $elementArray, $i, $exeptionName){
         if($i<count($elementArray)){
             foreach($arrayAssoc as $key=>$value){
                 if($elementArray[$i]==$key){
@@ -19,7 +17,7 @@ class Settings
     return $exeptionName;
 }
 
-    public static function config($element, $exeptionName="undefined"){
+    public function config($element, $exeptionName="undefined"){
         require_once "config.php";
 
           if(isset($config[$element])){
@@ -36,4 +34,3 @@ class Settings
           }
         
     }
-}
